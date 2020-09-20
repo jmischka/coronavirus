@@ -1,0 +1,1263 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   JM CREATIVE - Style
+   ========================================================================== */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1 {
+    margin: 0 0 0 0;
+    font-family: 'Lora',Brunel-Deck-Semibold,Georgia,serif;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 1.125;
+}
+
+p,
+.covVir-interactiveTitle,
+.covVir-readTitle {
+  margin: 0 0 0 0;
+  font-family: 'Lora',Georgia,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scr-covVir {
+    position: relative;
+    margin: 0 0 -40px 0;
+    width: 100%;
+    height: auto;
+}
+
+.covVir-frontPage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1D2633;
+    z-index: 100;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+}
+
+.covVir-frontPage-titleWrapper {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    -webkit-transform: translateY(-50%;);
+        -ms-transform: translateY(-50%;);
+            transform: translateY(-50%;);
+}
+
+.covVir-frontPage-title {
+    display: inline-block;
+    margin: 0 1px 0 1px;
+    font-family: 'Lora',Brunel-Deck-Semibold,Georgia,serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1.125;
+    color: white;
+    opacity: 0;
+    -webkit-transition-duration: .7s;
+         -o-transition-duration: .7s;
+            transition-duration: .7s;
+}
+
+.covVir-frontPage-titleSpace {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+.covVir-Timer {
+    position: relative;
+    display: none;
+    margin: 50px auto 0;
+    width: 50%;
+    height: 16px;
+    border: 1px solid #476080;
+    -webkit-animation-name: expandEnter;
+            animation-name: expandEnter;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+} 
+
+.covVir-timerFill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6B90BF;
+    -webkit-animation-name: expand;
+            animation-name: expand;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+}
+
+.covVir-HeadWrap {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.covVir-featuredMedia {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#covVir-featuredVideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    z-index: -10;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: .7s;
+            animation-duration: .7s;
+}
+
+.covVir-titleWrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 75px 0 25px;
+    background-color: rgba(23,27,38,.4);
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 3.5s;
+            animation-duration: 3.5s;
+}
+
+.covVir-titleSlug,
+.covVir-byline,
+.covVir-interactiveMobInstruct,
+.covVir-credits li {
+    position: relative;
+    display: block;
+    font-family: Benton,Helvetica,Arial,sans-serif;    
+}
+
+.covVir-bylineLinks,
+.covVir-intro a {  
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+    color: inherit;
+}
+
+.covVir-bylineLinks:hover {
+    border-bottom: none;
+}
+
+.covVir-intro a:hover {
+    border-bottom: none;
+    color: #81ACE6;
+}
+
+.covVir-titleSlug {
+    margin: 0 auto 13px;
+    font-weight: 700;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.covVir-headline {
+    margin: 0 auto 9px;
+}
+
+.covVir-subTitle {
+    margin: 0 auto 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.covVir-byline,
+.covVir-interactiveMobInstruct {
+    margin: 0 auto 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.covVir-interactiveMobInstruct {
+    padding: 0 35px;
+}
+
+.covVir-byline:before,
+.covVir-sketchTitle:after,
+.covVir-interactiveTitle:after,
+.covVir-readTitle:after {
+    content: "";
+    display: block;
+    margin: 20px auto 20px;
+    width: 50px;
+    height: 7px;
+}
+
+.covVir-byline:before {
+    border-top: 2px solid white;
+    border-bottom: 1px dotted white;
+}
+
+.covVir-sketchTitle:after,
+.covVir-interactiveTitle:after,
+.covVir-readTitle:after {
+    border-top: 2px solid #737373;
+    border-bottom: 1px dotted #737373;
+}
+
+.covVir-titleSlug,
+.covVir-headline,
+.covVir-subTitle,
+.covVir-byline {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    padding: 0 25px;
+    text-align: center;
+    color: white;
+}
+
+.covVir-mainContent {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.covVir-introWrap {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 100px 0 50px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.covVir-intro {
+    position: relative;
+    margin: 0 auto 24px;
+    padding: 0 35px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #656565;
+}
+
+.covVir-introWrap,
+.covVir-intro,
+.covVir-sketchHeader {
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+}
+
+.covVir-intro:last-child {
+    margin: 0 auto 0;
+}
+
+.covVir-mainContent .covVir-sketchHeader,
+.covVir-mainContent .covVir-interactiveHeader,
+.covVir-mainContent .covVir-bodyTextWrapper,
+.covVir-readWrapper {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
+    padding: 75px 35px;
+}
+
+.covVir-mainContent .covVir-sketchHeader,
+.covVir-mainContent .covVir-interactiveHeader,
+.covVir-mainContent .covVir-bodyTextWrapper,
+.covVir-readWrapper {
+    background-color: white;
+}
+
+.covVir-sketchTitle,
+.covVir-interactiveTitle,
+.covVir-readTitle {
+    position: relative;
+    display: block;
+    margin: 0 auto 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.covVir-sketchTitle {
+    color: #737373;
+}
+
+.covVir-sketchHeader p,
+.covVir-interactiveHeader p {
+    position: relative;
+    margin: 12px auto 0;
+    width: 100%;    
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.covVir-sketchTitle,
+.covVir-interactiveTitle,
+.covVir-sketchHeader p,
+.covVir-interactiveHeader p,
+.covVir-bodyHead,
+.covVir-bodyText,
+.covVir-readTitle {
+    max-width: 960px;
+}
+
+.covVir-sketchHeader p {
+    color: white;
+}
+
+.covVir-interactiveTitle,
+.covVir-interactiveHeader p,
+.covVir-readTitle {
+    color: #464646;
+}
+
+.covVir-virusMobile,
+.sketchfab-embed-wrapper {
+    position: relative;   
+    margin: 50px auto 0;   
+}
+
+.covVir-virusMobile {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+}
+
+.covVir-virusMobileImg,
+.covVir-virusMobileImg img {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.sketchfab-embed-wrapper {
+    display: none;
+    width: calc((100% / 12) * 11);
+    height: 90vh;
+}
+
+.sketchfab-embed-wrapper iframe {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 90vh;
+    border: none;
+}
+
+.covVir-spacer {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.covVir-interactive {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 0 0 35px 0;
+}
+
+.covVir-interactiveWindow {
+    position: relative;
+    margin: 16px auto 0;
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+    background-color: white;
+    border-top: 1px solid #B0B0B0;
+    border-bottom: 1px solid #B0B0B0;
+    -webkit-transition-duration: .5s;
+         -o-transition-duration: .5s;
+            transition-duration: .5s;
+}
+
+.covVir-interactiveItem {
+    position: absolute;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    top: 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.covVir-interactiveItem.swipedTo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.covVir-interactiveMedia {
+    position: relative;
+    margin: 0 0 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: calc((100% / 12) * 12);
+    height: 50%;
+    overflow: hidden; 
+    background-color: transparent;
+}
+
+.covVir-interactiveMedia img,
+.covVir-interactiveMedia video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.covVir-interactiveTextbox {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 0 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: calc((100% / 12) * 12);
+    height: 50%;
+    padding: 12px 12px 0px 12px;
+}
+
+.covVir-sWin {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 47.5%;
+    width: 90%;
+    height: 45%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.covVir-bodyImage {
+    position: relative;
+    display: block;
+    margin: 0 auto 35px;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    border: 1px dotted #656565;
+}
+
+.covVir-bodyImage img {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    max-width: none;
+    height: auto;
+}
+
+.covVir-imgd {
+    display: none;
+}
+
+.covVir-imgm {
+    display: block;
+}
+
+.covVir-interactiveTextHead,
+.covVir-bodyHead {
+    display: block; 
+    font-family: Benton,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    width: 100%;
+    height: auto;
+    color: #656565;
+}
+
+.covVir-interactiveTextHead {
+    margin: 0 0 6px 0;
+}
+
+.covVir-bodyHead {
+    margin: 0 auto 12px;
+}
+
+.covVir-interactiveText,
+.covVir-bodyText,
+.covVir-readMorebyline,
+.covVir-virusMobileAnnotations li {
+    display: block;
+    font-family: Benton,Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 100%;
+    height: auto;    
+}
+
+.covVir-interactiveText,
+.covVir-bodyText,
+.covVir-readMorebyline {
+    color: #656565;
+}
+
+.covVir-virusMobileAnnotations li {
+    margin: 0 0 4px 0;
+    padding: 0 0 0 0;
+    color: white;
+}
+
+.covVir-virusMobileAnnotations li:last-child {
+    margin: 0 0 0 0;
+}
+
+.covVir-interactiveText {
+    margin: 0 0 0 0;
+}
+
+.covVir-bodyText {
+    margin: 0 auto 0;
+}
+
+.covVir-interactiveTime {
+    display: inline-block;
+    margin: 12px 0 0 0;
+    font-family: Benton,Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+    width: 190px;
+    height: auto;
+    padding: 6px;
+    background-color: yellow;
+    color: black;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+}
+
+.covVir-interactiveCounterWrap {
+    position: relative;
+    margin: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 12px 6px 12px 6px;
+    background-color: white;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+}
+
+.covVir-interactiveCountLink {
+    display: block;
+    margin: 0 6px;
+    width: 9px;
+    height: 9px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid #656565;
+    text-decoration: none;
+}
+
+.covVir-interactiveCountLink.active {
+    background-color: #656565;
+    border: none;
+}
+
+.covVir-readWrapper {
+    min-height: 100vh;
+}
+
+.covVir-readMoreList,
+.covVir-credits,
+.covVir-virusMobileAnnotations {
+    position: relative;  
+    width: 100%;
+    height: auto;   
+    list-style-type: none;
+    padding: 0 0 0 0;
+}
+
+.covVir-readMoreList,
+.covVir-credits {
+    max-width: 960px;
+}
+
+.covVir-readMoreList,
+.covVir-virusMobileAnnotations {
+    margin: 50px auto 0;
+}
+
+.covVir-credits {
+    margin: 100px auto 0;
+}
+
+.covVir-readMoreList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.covVir-readMoreList li,
+.covVir-credits li {
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.covVir-readMoreList-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    text-decoration: none;
+    background-color: white;
+    -webkit-transition-duration: .7s;
+         -o-transition-duration: .7s;
+            transition-duration: .7s;
+}
+
+.covVir-readMoreList-link:hover {
+    background-color: #E6E6E6;
+}
+
+.covVir-readMoreList-link figure,
+.covVir-readMoreList-link figure img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.covVir-readMoreList-link figure {
+    margin: 0 0 6px 0;
+}
+
+.covVir-readMoreList-link figure img {
+    margin: 0 0 0 0;
+}
+
+.covVir-readMoreHead,
+.covVir-readMoreDek {
+    display: block;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+    color: #656565;
+}
+
+.covVir-readMoreHead {
+    font-family: 'Lora',Brunel-Deck-Semibold,Georgia,serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.covVir-readMoreDek {
+    font-family: 'Lora',Georgia,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.covVir-readMorebyline {
+    font-style: italic;
+}
+
+.covVir-credits li {
+    margin: 0 0 0 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.covVir-creditLinks {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+    color: black;
+}
+
+.covVir-creditLinks:hover {
+    border-bottom: none;
+}
+
+/* ==========================================================================
+   HELPER CLASSES
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   CSS ANIMATION
+   ========================================================================== */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes expandEnter {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@keyframes expandEnter {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes expand {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .covVir-interactiveTextbox {
+        padding: 25px 35px 25px 35px;
+    }
+
+    .covVir-imgd {
+        display: block;
+    }
+
+    .covVir-imgm {
+        display: none;
+    } 
+
+    .covVir-readMoreList li {
+        width: 50%;
+    }   
+}
+
+@media only screen and (min-width: 900px) {
+    .covVir-intro {
+        font-size: 24px;
+    }
+
+    .covVir-virusMobile {
+        display: none;
+    }
+
+    .sketchfab-embed-wrapper {
+        display: block;
+    }
+
+    .covVir-interactiveMobInstruct {
+        display: none;
+    }
+
+    .covVir-interactiveWindow {
+        position: relative;
+        margin: 0 auto 0;
+        width: 100%;
+        height: auto;
+        border-top: none;
+        border-bottom: none;
+        overflow: hidden;
+    }
+
+    .covVir-interactive {
+        padding: 0 0 0 0;
+    }
+
+    .covVir-interactiveItem {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: calc(100vh) 0 0 0;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .covVir-interactiveWindow .covVir-interactiveItem:last-child {
+        padding: calc(100vh) 0 calc(100vh) 0;
+    } 
+
+    .covVir-sWin {
+        display: none;
+    }
+
+    .covVir-interactiveMedia {
+        position: absolute;
+        display: block;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 0 0 0 0;
+        left: calc(100% / 12 * 4);
+        top: 0;
+        bottom: auto;
+        width: calc((100% / 12) * 8);
+        height: 100vh;
+        opacity: 0;
+        -webkit-transition-duration: 1s;
+             -o-transition-duration: 1s;
+                transition-duration: 1s;
+    }
+
+    .covVir-interactiveMedia.scrolling {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+    }
+
+    .covVir-interactiveMedia.scrolling.scrolled {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+    }
+
+    .covVir-interactiveMedia img,
+    .covVir-interactiveMedia video {
+        -webkit-animation-name: none;
+                animation-name: none;
+    }
+
+    .covVir-interactiveTextbox {
+        position: relative;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        margin: 0 0 0 calc((100% / 12) * 1);
+        width: calc((100% / 12) * 3);
+        height: auto;
+        padding: 25px 35px 25px 35px;
+    }
+
+    .covVir-interactiveCounterWrap {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        left: -8.333%;
+        top: 0;
+        bottom: auto;
+        width: 8.333%;
+        height: 100vh;
+        padding: 50px 25px 50px 25px;
+        border-right: 1px dotted #666666;
+    }
+
+    .covVir-interactiveCounterWrap.scrolling {
+        position: fixed;
+        left: 0;
+        top: auto;
+        bottom: 0;
+    }
+
+    .covVir-interactiveCounterWrap.scrolling.scrolled {
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: 0;
+    }
+
+    .covVir-readMoreList li {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    h1 {
+        font-size: 50px;
+        letter-spacing: -2px;
+    }
+
+    .covVir-spacer {
+        background-attachment: fixed;
+    }
+}
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
